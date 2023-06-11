@@ -35,9 +35,7 @@ nav > ul > li:hover > a{
     float: right;
 }
 
-main > article{
-    
-}
+
 
 footer{
     text-align: center;
@@ -46,4 +44,8 @@ footer{
     bottom: 0;
     width: 100%;
     background-color: beige;
+}
+
+.about{
+    background: url("/img/이미지1.jpg");
 }
