@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+
 h1{
     
     text-align: center;
@@ -6,8 +9,6 @@ h1{
 ul{
     width: 1000px;
    
-    
-    
 }
 nav{
     
@@ -35,8 +36,11 @@ nav > ul > li:hover > a{
     float: right;
 }
 
-main > article{
-    
+iframe{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 footer{

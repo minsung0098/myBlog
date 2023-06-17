@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+body {
+    font-family: 'Noto Sans Korean', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+ul{
+    width: 1000px;
+}
+
+nav{
+    
+    color:white ;
+    background-color: black;
+}
+
+nav > ul > li{
+    display: inline-block;
+}
+
+nav > ul > li > a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+}
+
+nav > ul > li:hover > a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.float_right{
+    float: right;
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: beige;
+}
+
+.about{
+    background: url("/img/이미지1.jpg");
+}
+
+.login-wrapper{
+    width: 400px;
+    height: 300px;
+    border: 1px solid lightgray;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate();
+    display: inline-block
+}
+
+.login-wrapper > input{
+    width: 80;
+    border: 1px solid gray;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.login-wrapper > button{
+    width: 80%;
+    padding: 10px 0;
+    margin: 10px 0;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+
+.login-wrapper > button:hover{
+
+    background-color: white;
+    color:black;
+}
+
+
+
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0, 0, 0);
+    background-color:rgba(29, 29, 29, 0.4);
+    
+}
+
+.modal -content{
+    background-color: azure;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px soild gray;
+    width: 50%;
+}

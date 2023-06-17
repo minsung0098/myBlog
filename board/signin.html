@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+    </style>    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <!-- <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">">
+</head>
+<body>
+        <header>
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contant</a>
+                    </li>
+                    <li class="float_right">
+                        <a href="">Sign In</a>
+                    </li>
+                    <li class="float_right">
+                        <a href="">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+            <section class="login-wrapper">
+                <h2>Login</h2>
+                <form method="post" action="서버의url" id="login-form">
+                    <input type="text" name="userName" placeholder="Email">
+                    <input type="password" name="userPassword" placeholder="Password">
+                    <label for="remember-check">
+                        <input type="checkbox" id="remember-check">아이디 저장하기
+                    </label>
+                    <button id = "modal" type="submit" value="Login"></button>
+                </form>
+            </section>
+
+
+        </main>
+        <footer>
+            <p>
+                2023 My Blog. All rights reserverd  <a href="footer.html">| 개인정보취급방침</a> 
+            </p>
+        </footer>
+        <div id ="myModal" class ="modal">
+            <div class = "modal-content">
+                <span class = "close">&times;</span>
+                <p>
+                    정말 로그인하시 겠습니까.
+                </p>
+                <button type ="login-btn" id="next">
+                    진행
+                </button>
+            </div>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+            
+            var btn = document.getElementById("login-btn")
+            
+            var span = document.getElementsByClassName("close")[0];
+            
+            var next = document.getElementById("next");
+            
+            btn.onclick = function (){
+                    modal.style.display = "block";
+                }
+            
+            span.onclick = function(){
+                    modal.style.display = "none";
+                }
+            
+            window.onclick = function (event) {
+                if(event.target == modal){
+                    modal.style.display = "none";
+                    }
+                }
+            </script>
+</body>
+</html>
